@@ -1,9 +1,7 @@
 <div class="version">
-<p>This Version:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="archive-link" href="cellml_metadata_1.0">http://www.cellml.org/specifications/metadata/cellml_metadata_1.0</a><br>
-Latest Version:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="archive-link" href="../cellml_metadata_1.0">http://www.cellml.org/specifications/metadata/cellml_metadata_1.0</a><br>Previous Versions:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="archive-link" href="archive/metadata/20011102/cellml_metadata_specification.html">http://www.cellml.org/specifications/archive/metadata/20011102/cellml_metadata_specification</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="archive-link" href="archive/metadata/20010518/cellml_metadata_specification.html">http://www.cellml.org/specifications/archive/metadata/20010518/cellml_metadata_specification</a><br>
+<p><br>
 
-Authors:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autumn A. Cuellar (Bioengineering Research Group, University of Auckland)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Melanie Nelson (Physiome Sciences Inc.)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Warren Hedley (Bioengineering Research Group, University of Auckland)<br>Contributors:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;David Bullivant (Bioengineering Research Group, University of Auckland)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fred Livingston (Physiome Sciences Inc.)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Catherine Lloyd (Bioengineering Research Group, University of Auckland)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Poul Nielsen (Bioengineering Research Group, University of Auckland)<br></p></div>
+Authors:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autumn A. Cuellar (Bioengineering Research Group, University of Auckland)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Melanie Nelson (Physiome Sciences Inc.)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Warren Hedley (Bioengineering Research Group, University of Auckland)<br>Contributors:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;David Bullivant (Bioengineering Research Group, University of Auckland)</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; James Lawson&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fred Livingston (Physiome Sciences Inc.)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Catherine Lloyd (Bioengineering Research Group, University of Auckland)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Poul Nielsen (Bioengineering Research Group, University of Auckland)<br><br></div>
 
 
 
@@ -13,7 +11,7 @@ Authors:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autumn A
 
 
 <p class="text">
-This document specifies CellML<sup>TM</sup> Metadata 1.0, the recommended method for identifying types of metadata embedded in a CellML document. <a href="../cellml_1.0">The CellML specification</a>
+This document specifies CellML Metadata 1.0, the recommended method for identifying types of metadata embedded in a CellML document. <a href="../cellml_1.0">The CellML specification</a>
 recommends the use of the Resource Description Framework for the
 association of metadata with CellML objects. This document demonstrates
 how the Dublin Core, BQS and vCard data models can be used to classify
@@ -21,28 +19,7 @@ metadata. It also defines some CellML-specific types of metadata.
 </p>
 
 
-  <h2>Status of this document</h2>
-
-
-
-
-<p class="text">This document is a draft version of the specification
-for version 1.0 of CellML Metadata. As a Working Draft, this
-specification may be updated, replaced, or made obsolete at any time.
-It is distributed for discussion purposes only and should not be used
-as a reference. </p>
-
-<p class="text">
-The authors invite feedback from the public. Readers are encouraged to subscribe and send comments to the <a href="../../../mailman/listinfo">cellml-discussion</a> mailing list. Alternatively, readers may send comments and questions via e-mail to <a href="mailto:info@cellml.org">info@cellml.org</a>.
-</p>
-
-<p class="text">
-The <a href="..">latest version of the CellML Metadata specification</a> can always be found on the CellML website.
-</p>
-
-
-
-<h2><a name="sec_contents">Contents</a></h2><ul>
+  <h2>Status of this document</h2>This specification was frozen on 2005-06-28 and finalised on 2009-02-16. <br><br><h2><a name="sec_contents">Contents</a></h2><ul>
 <li>1&nbsp;&nbsp;<a href="#sec_introduction">Introduction</a></li>
 <li>2&nbsp;&nbsp;<a href="#sec_background">Background</a></li>
 <li>3&nbsp;&nbsp;<a href="#sec_fundamentals">Fundamentals</a></li>
@@ -410,7 +387,7 @@ of vCard elements in RDF. These elements are preceded by the <code class="xns">v
 <h3><a name="sec_bqs_intro">2.4&nbsp;&nbsp;Bibliographic Query Service</a></h3>
 
 <p class="text">
-No bibliographic standards exist within RDF/XML at the time of writing.  However, the Object Management Group has published the <a href="http://industry.ebi.ac.uk/openBQS/">Bibliographic Query Service Specification</a>.  The <strong>DsLSRBibObjects</strong>
+No bibliographic standards exist within RDF/XML at the time of writing.  However, the Object Management Group has published the <a href="http://www.omg.org/technology/documents/formal/bibliographic_query.htm">Bibliographic Query Service Specification</a>.  The <strong>DsLSRBibObjects</strong>
 Module from this specification presents an excellent general data model
 for bibliographic references. The CellML development team recommends an
 RDF serialization of this data model (henceforth referred to as the
@@ -1460,7 +1437,7 @@ annotation is defined exactly as the model creator metadata (<a href="#sec_model
 The BQS data model draws extensively from the <a href="http://dublincore.org/documents/dces/">Dublin Core metadata element set</a>.
 Therefore, the RDF serialization of these elements is used wherever
 possible. The following sections define the CellML recommended RDF
-serialization of the <strong>DsLSRBibObjects</strong> Module from <a href="http://www.omg.org/cgi-bin/doc?lifesci/00-99-14.pdf">OMG's Bibliographic Query Service Draft Specification</a>.
+serialization of the <strong>DsLSRBibObjects</strong> Module from <a href="http://www.omg.org/technology/documents/formal/bibliographic_query.htm">OMG's Bibliographic Query Service Draft Specification</a>.
 </p>
 
 
